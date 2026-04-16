@@ -1,0 +1,282 @@
+# freehtmltopdf.app — Complete Content
+
+> Free, browser-based HTML to PDF converter. Paste code or upload .html files, preview live, configure page settings, download PDF. No signup, no server uploads. Part of Freesuite.
+
+---
+
+## Homepage: Free HTML to PDF Converter
+
+### Free HTML to PDF Converter — Turn Code into PDF Instantly
+
+freehtmltopdf.app is a free, browser-based HTML to PDF converter that turns your HTML code into downloadable PDF files instantly. Paste HTML, upload an .html file, or use a built-in template, then configure page size, orientation, and margins before downloading a high-quality PDF. All conversion runs locally in your browser using JavaScript — your code and documents never leave your device, making freehtmltopdf.app the most private way to convert HTML to PDF online.
+
+### How does freehtmltopdf.app convert HTML to PDF?
+
+freehtmltopdf.app renders your HTML code in a live preview panel, then captures the rendered output and converts it into a multi-page PDF document. You can choose from six page sizes (A4, Letter, Legal, A3, A5, Tabloid), switch between portrait and landscape orientation, and set margins from none to 30mm. The quality slider lets you balance file size against rendering sharpness. Because the conversion happens entirely in your browser, there are no file size limits and no waiting for server processing.
+
+### What HTML and CSS features are supported?
+
+freehtmltopdf.app supports the full range of HTML5 elements and most CSS properties including flexbox layouts, custom fonts loaded via inline @font-face rules, CSS variables, gradients, and box shadows. Inline CSS and internal stylesheets both work. CSS Grid has limited support in the PDF output. For best results with complex layouts, use flexbox positioning. Images referenced with base64 data URIs render in the PDF; external image URLs may not load due to browser security restrictions.
+
+### Can I use freehtmltopdf.app for invoices and resumes?
+
+Yes. freehtmltopdf.app includes built-in templates for common document types including resumes, invoices, reports, and formal letters. Select a template from the dropdown, customize the HTML to match your needs, preview the result, and download the PDF. The templates use clean, print-optimized CSS that produces professional-looking documents on A4 and Letter page sizes.
+
+### Is freehtmltopdf.app free to use?
+
+freehtmltopdf.app is completely free with no signup, no account, and no usage limits. Convert as many HTML files to PDF as you need. The tool works offline after the first visit thanks to service worker caching. Your HTML code stays on your device — freehtmltopdf.app never sends data to a server.
+
+### Frequently Asked Questions
+
+**How do I convert HTML to PDF for free?**
+Paste your HTML code into the editor on freehtmltopdf.app, preview the rendered output, choose your page size and orientation, then click Download PDF. Everything runs in your browser with no server uploads.
+
+**Is freehtmltopdf.app safe and private?**
+Yes. All conversion happens locally in your browser using JavaScript. Your HTML code and generated PDFs never leave your device. No data is sent to any server.
+
+**Can I upload an HTML file instead of pasting code?**
+Yes. Click the Upload button or drag and drop any .html file directly onto the editor panel. The file contents will load into the editor and the preview updates automatically.
+
+**What page sizes does freehtmltopdf.app support?**
+freehtmltopdf.app supports A4, Letter, Legal, A3, A5, and Tabloid page sizes in both portrait and landscape orientation, with adjustable margins from none to 30mm.
+
+**Does the converter support CSS styling?**
+Yes. Inline CSS, internal stylesheets, and most CSS properties are supported. The converter renders your HTML with full CSS styling before converting to PDF. Flexbox layouts work well; CSS Grid has limited support.
+
+**Do I need to sign up or install anything?**
+No. freehtmltopdf.app works instantly in any modern browser with no signup, no installation, and no account required. It also works offline after the first visit.
+
+---
+
+## Comparison: freehtmltopdf.app vs wkhtmltopdf
+
+### freehtmltopdf.app vs wkhtmltopdf — Which HTML to PDF Tool Should You Use?
+
+freehtmltopdf.app is a free, browser-based HTML to PDF converter that requires zero installation. wkhtmltopdf is a command-line tool that converts HTML to PDF using the WebKit rendering engine. While wkhtmltopdf has been the go-to solution for developers for years, it was archived in 2023 and is no longer maintained. freehtmltopdf.app offers instant conversion in your browser with a live preview, making it the faster choice for one-off conversions and visual document creation.
+
+**Feature Comparison:**
+
+| Feature | freehtmltopdf.app | wkhtmltopdf |
+|---------|-------------------|-------------|
+| Price | Free | Free (open source) |
+| Installation | None — runs in browser | Requires download + dependencies |
+| Live preview | Yes | No |
+| Privacy | 100% local in browser | Local (command line) |
+| CSS support | Flexbox, most CSS3 | WebKit CSS (older engine) |
+| Batch processing | Single document | Yes (scripted) |
+| Page size options | A4, Letter, Legal, A3, A5, Tabloid | Any custom size |
+| Maintained | Yes | Archived (2023) |
+| Offline support | Yes (PWA) | Yes (native) |
+| Platform | Any browser | Windows, macOS, Linux |
+
+### When should you use freehtmltopdf.app over wkhtmltopdf?
+
+Choose freehtmltopdf.app when you need to quickly convert an HTML document to PDF without installing anything. The live preview lets you see exactly how the PDF will look before downloading. It is ideal for converting HTML invoices, resumes, reports, and letters. freehtmltopdf.app works on any device with a browser, including tablets and Chromebooks where installing wkhtmltopdf is not possible.
+
+### When is wkhtmltopdf still the better choice?
+
+If you need automated, server-side batch conversion of hundreds of HTML files as part of a build pipeline, wkhtmltopdf or its modern alternatives (Puppeteer, Playwright) remain better suited. However, for any interactive or one-off conversion, freehtmltopdf.app is faster and more convenient since there is nothing to install or configure.
+
+### FAQ
+
+**Is freehtmltopdf.app a replacement for wkhtmltopdf?**
+For quick, one-off conversions and visual previewing, yes. freehtmltopdf.app runs in your browser with no installation. For automated server-side batch processing, wkhtmltopdf remains better suited.
+
+**Does freehtmltopdf.app require installation?**
+No. freehtmltopdf.app runs entirely in your browser. Open the site and start converting immediately. No downloads, no dependencies, no command line.
+
+**Can I use freehtmltopdf.app for batch conversion?**
+freehtmltopdf.app is designed for single-document conversion with live preview. For batch processing, wkhtmltopdf or a server-side API is more appropriate.
+
+**Which has better CSS support?**
+wkhtmltopdf uses the WebKit rendering engine and has broader CSS support including CSS Grid. freehtmltopdf.app supports most CSS properties including flexbox, gradients, and custom fonts, with limited CSS Grid support.
+
+**Is wkhtmltopdf still maintained?**
+wkhtmltopdf has been archived and is no longer actively maintained. It uses an outdated WebKit engine. freehtmltopdf.app uses modern browser rendering and is continuously updated.
+
+**Does freehtmltopdf.app send my HTML to a server?**
+No. All conversion happens locally in your browser using JavaScript. Your HTML code never leaves your device, making it more private than server-based tools.
+
+---
+
+## Comparison: freehtmltopdf.app vs PDFShift
+
+### freehtmltopdf.app vs PDFShift — Free Browser Tool vs Paid API
+
+freehtmltopdf.app is a completely free HTML to PDF converter that runs in your browser with no signup, no API key, and no conversion limits. PDFShift is a paid API service that converts HTML to PDF on their servers, starting at $9/month after a 50-conversion free tier. For developers and designers who need to quickly convert HTML to PDF with a visual preview, freehtmltopdf.app is the instant, private, and free alternative to PDFShift.
+
+**Feature Comparison:**
+
+| Feature | freehtmltopdf.app | PDFShift |
+|---------|-------------------|----------|
+| Price | Free, unlimited | Free tier: 50/mo, then $9-49/mo |
+| Privacy | 100% local — nothing leaves your browser | HTML sent to PDFShift servers |
+| Sign-up required | No | Yes (account + API key) |
+| Live preview | Yes | No |
+| API access | No | Yes (REST API) |
+| URL-to-PDF | No (paste/upload only) | Yes |
+| Offline support | Yes (PWA) | No |
+| Page size options | A4, Letter, Legal, A3, A5, Tabloid | Any custom size |
+| Rate limits | None | Based on plan |
+
+### Why choose freehtmltopdf.app over PDFShift?
+
+freehtmltopdf.app is better when you need immediate, visual conversion. Paste your HTML, see it rendered in real time, adjust page size and margins, and download the PDF. There is no account to create, no API key to manage, and no monthly bill. Your HTML stays on your device, making freehtmltopdf.app the more private option for sensitive documents like invoices, contracts, and resumes.
+
+### When is PDFShift the better choice?
+
+PDFShift excels in automated workflows. If you need to generate PDFs programmatically from a backend application, convert URLs to PDF, or process documents at scale via API, PDFShift provides a reliable server-side solution. The trade-off is cost, signup, and sending your HTML to their servers.
+
+### FAQ
+
+**Is freehtmltopdf.app really free compared to PDFShift?**
+Yes. freehtmltopdf.app is completely free with no usage limits, no signup, and no API key required. PDFShift offers a free tier with 50 conversions per month, then charges $9-49/month for more.
+
+**Does PDFShift have better output quality?**
+PDFShift uses a server-side Chrome engine which can produce very high-quality PDFs. freehtmltopdf.app also produces high-quality output using the html2canvas engine in your browser with adjustable quality settings up to 3x.
+
+**Can I use freehtmltopdf.app without an API key?**
+Yes. freehtmltopdf.app has no API and needs no key. Just paste HTML and download your PDF. PDFShift requires account registration and an API key for every request.
+
+**Which is more private?**
+freehtmltopdf.app is more private. Your HTML never leaves your browser. PDFShift requires sending your HTML to their servers for conversion.
+
+**Does freehtmltopdf.app work offline?**
+Yes. After the first visit, freehtmltopdf.app works offline thanks to service worker caching. PDFShift requires an internet connection for every conversion.
+
+**When should I use PDFShift instead?**
+Use PDFShift when you need server-side automated conversion via API, URL-to-PDF conversion, or need to generate PDFs programmatically in a backend application.
+
+---
+
+## Use Case: Convert HTML Invoice to PDF
+
+### Convert HTML Invoice to PDF — Free Online Converter
+
+freehtmltopdf.app lets you convert HTML invoices to professional PDF files instantly in your browser. Paste your invoice HTML, use the built-in invoice template, or upload an .html invoice file. The live preview shows exactly how the PDF will look before you download it. freehtmltopdf.app processes everything locally — your invoice data, client details, and payment amounts never leave your device.
+
+### How to convert an HTML invoice to PDF with freehtmltopdf.app
+
+Open freehtmltopdf.app and click Templates, then select Invoice. The editor loads a professional invoice template with company header, billing address, line items, and totals. Edit the HTML to add your company name, client details, and line items. The preview panel updates in real time. Choose A4 or Letter page size, set Normal margins, and click Download PDF. The entire process takes under a minute and produces a clean, print-ready invoice.
+
+### Why use HTML for invoices?
+
+HTML invoices give you complete control over layout, typography, and branding. Unlike Word documents or online invoice generators, HTML lets you use CSS to create pixel-perfect designs with your exact brand colors, fonts, and logo. With freehtmltopdf.app, you write the HTML once and generate consistent PDFs every time. The template approach also makes it easy to automate invoice generation with a simple find-and-replace workflow.
+
+### Can I add my company branding?
+
+Yes. Customize every aspect of the invoice through CSS — change fonts, colors, spacing, and layout. Add your company logo as a base64-encoded image in an img tag. The built-in invoice template uses clean, minimal CSS that you can modify to match your brand identity. freehtmltopdf.app renders CSS flexbox layouts accurately, so complex invoice designs with multi-column sections work well.
+
+### FAQ
+
+**How do I convert an HTML invoice to PDF?**
+Open freehtmltopdf.app, paste your HTML invoice code or click Templates and select Invoice, preview the rendered invoice, choose A4 or Letter page size, then click Download PDF.
+
+**Does the invoice template include line items and totals?**
+Yes. The built-in invoice template includes company header, billing address, itemized line items with quantity and rate, subtotal, tax calculation, and total amount.
+
+**Can I customize the invoice styling?**
+Yes. Edit the CSS in the HTML to change fonts, colors, layout, and branding. The live preview shows changes in real time so you can fine-tune the design before generating the PDF.
+
+**Is the invoice data stored anywhere?**
+No. freehtmltopdf.app processes everything in your browser. Your invoice data, including client details and amounts, never leaves your device.
+
+**What page size is best for invoices?**
+A4 is the standard for most countries. Letter (8.5 x 11 inches) is standard in the US and Canada. Both work well with the built-in invoice template.
+
+**Can I add my company logo to the invoice PDF?**
+Yes. Include your logo as a base64-encoded image in the HTML using an img tag with a data URI. External image URLs may not load due to browser security restrictions.
+
+---
+
+## Use Case: Convert HTML Resume to PDF
+
+### Convert HTML Resume to PDF — Free, Professional Results
+
+freehtmltopdf.app converts your HTML resume into a polished, print-ready PDF in seconds. Use the built-in resume template with pre-designed sections for experience, education, and skills, or paste your own custom HTML resume. The live preview shows exactly how your resume PDF will look on paper. freehtmltopdf.app runs entirely in your browser, so your personal details, work history, and contact information never leave your device.
+
+### How to create a PDF resume with freehtmltopdf.app
+
+Open freehtmltopdf.app and click Templates, then select Resume. The editor loads a professional resume template with sections for name, title, contact details, work experience, education, and skills. Replace the placeholder content with your information. The preview panel updates as you type. Select Letter (US) or A4 (international) page size, choose Normal margins, and click Download PDF. Your resume downloads as a clean, professional PDF ready for job applications.
+
+### Why build your resume in HTML?
+
+HTML resumes give you precise control over typography, spacing, and layout that word processors cannot match. CSS lets you define exact font sizes, line heights, and margins. You can version-control your resume with Git, store multiple variations, and regenerate the PDF anytime. The HTML format also makes it easy to maintain a consistent design across multiple resume versions tailored for different positions.
+
+### Tips for a great HTML resume PDF
+
+Keep the design simple and scannable. Use one or two fonts, consistent heading sizes, and plenty of white space. Stick to flexbox for layout since it renders reliably in the PDF output. Avoid CSS Grid for critical layout elements. Set body max-width to 700px for a well-proportioned single-column resume that fills an A4 or Letter page nicely with Normal margins.
+
+### FAQ
+
+**How do I create a PDF resume from HTML?**
+Open freehtmltopdf.app, click Templates and select Resume. Edit the template with your information, preview it live, then click Download PDF to get a professional PDF resume.
+
+**Is the resume template ATS-friendly?**
+The HTML resume template uses clean, semantic HTML with simple styling. While PDF resumes work well for direct applications, for ATS systems consider also submitting a plain-text version.
+
+**Can I customize the resume layout?**
+Yes. The resume template is fully editable HTML and CSS. Change fonts, colors, section order, and layout. The live preview shows every change instantly.
+
+**What page size should I use for a resume?**
+Letter size (8.5 x 11 inches) is standard in the US. A4 is standard internationally. Both are available in freehtmltopdf.app. Use Normal margins for a balanced layout.
+
+**Is my resume data private?**
+Yes. freehtmltopdf.app processes everything in your browser. Your personal information, work history, and contact details never leave your device.
+
+**Can I use custom fonts in my resume?**
+Yes. Define custom fonts using CSS @font-face rules with base64-encoded font data, or use web-safe fonts like Georgia, Arial, or Segoe UI that are available in all browsers.
+
+---
+
+## Guide: How to Convert HTML to PDF Free
+
+### How to Convert HTML to PDF for Free — Complete Guide
+
+Converting HTML to PDF is straightforward with freehtmltopdf.app. This free browser-based tool lets you paste HTML code or upload an .html file, preview the rendered output in real time, configure page settings, and download a high-quality PDF. No installation, no signup, and no server uploads required. freehtmltopdf.app processes everything locally in your browser, making it the fastest and most private way to convert HTML to PDF online.
+
+### Step-by-step: How to convert HTML to PDF with freehtmltopdf.app
+
+1. Open freehtmltopdf.app in any modern browser (Chrome, Firefox, Safari, Edge).
+2. Enter your HTML — paste code into the editor, upload an .html file via the Upload button, or drag and drop a file onto the editor panel. You can also select a built-in template (resume, invoice, report, or letter).
+3. Preview the output — the right panel renders your HTML in real time. Check that the layout, fonts, and colors look correct.
+4. Configure page settings — choose page size (A4, Letter, Legal, A3, A5, Tabloid), orientation (portrait or landscape), margins (none, small, normal, large), and quality (1x, 2x, or 3x).
+5. Download the PDF — click the Download PDF button or press Ctrl+Enter. The PDF generates in your browser and downloads automatically with a filename based on the HTML title tag.
+
+### What CSS features work in the PDF output?
+
+freehtmltopdf.app supports most CSS properties including flexbox layouts, custom fonts via @font-face, CSS variables, gradients, box shadows, borders, and transforms. Inline styles and internal stylesheets both work. CSS Grid has limited support in the PDF output — for reliable layouts, use flexbox. Background colors and images render correctly. External images may not load due to CORS restrictions; use base64 data URIs for images that must appear in the PDF.
+
+### Tips for the best PDF output
+
+Set explicit widths on your content (600-700px for A4/Letter). Use print-friendly fonts like Georgia, Arial, or Segoe UI. Avoid very thin borders (under 1px) which may not render in the PDF. Test with 2x quality for a good balance of file size and sharpness. Use page-break-before or page-break-after CSS properties to control where page breaks occur in multi-page documents. Keep total document height reasonable — very long single-page HTML will be split across multiple PDF pages automatically.
+
+### Can I convert HTML to PDF without installing software?
+
+Yes. freehtmltopdf.app runs entirely in your browser with no downloads or installations. Unlike command-line tools like wkhtmltopdf or Puppeteer, you do not need Node.js, a terminal, or any dependencies. Just open the website and start converting. The tool also works offline after the first visit thanks to service worker caching.
+
+### FAQ
+
+**What is the easiest way to convert HTML to PDF?**
+The easiest way is to use freehtmltopdf.app. Open the site, paste your HTML code, and click Download PDF. No installation, no signup, no command line required.
+
+**Can I convert HTML with CSS to PDF?**
+Yes. freehtmltopdf.app supports inline CSS, internal stylesheets, flexbox layouts, gradients, shadows, and most CSS3 properties. The CSS styling is preserved in the PDF output.
+
+**How do I convert an HTML file to PDF?**
+Open freehtmltopdf.app and click Upload, or drag and drop your .html file onto the editor panel. The file loads into the editor, the preview updates, and you can download the PDF immediately.
+
+**Is there a size limit for HTML conversion?**
+There is no hard file size limit since everything runs in your browser. Very large HTML documents (10,000+ lines) may take a few seconds to render. For best performance, keep documents under 5,000 lines.
+
+**Can I choose the PDF page size?**
+Yes. freehtmltopdf.app supports A4, Letter, Legal, A3, A5, and Tabloid page sizes in both portrait and landscape orientation, with adjustable margins.
+
+**Does freehtmltopdf.app work on mobile?**
+Yes. The interface adapts to mobile screens with tabbed editor and preview panels. You can paste HTML, preview it, and download PDFs on any phone or tablet with a modern browser.
+
+---
+
+## About Freesuite
+
+freehtmltopdf.app is part of Freesuite — a collection of 20+ free browser-based tools at freesuite.app. Every tool runs locally in your browser with no signups and no server uploads. Other tools include JSON Formatter, PDF Merger, Image to PDF, Base64 Encoder, and more.

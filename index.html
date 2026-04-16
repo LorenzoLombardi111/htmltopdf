@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free HTML to PDF Converter Online — freehtmltopdf.app</title>
+    <meta name="description" content="Convert HTML to PDF for free in your browser. Paste code or upload files, preview live, download PDF. No signup.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://freehtmltopdf.app/">
+    <meta name="theme-color" content="#faf9f6">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free HTML to PDF Converter Online — freehtmltopdf.app">
+    <meta property="og:description" content="Convert HTML to PDF for free in your browser. Paste code or upload files, preview live, download PDF. No signup.">
+    <meta property="og:image" content="https://freehtmltopdf.app/og-image.svg">
+    <meta property="og:url" content="https://freehtmltopdf.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free HTML to PDF Converter Online — freehtmltopdf.app">
+    <meta name="twitter:description" content="Convert HTML to PDF for free in your browser. Paste code or upload files, preview live, download PDF. No signup.">
+    <meta name="twitter:image" content="https://freehtmltopdf.app/og-image.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "freehtmltopdf.app",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "url": "https://freehtmltopdf.app/",
+        "description": "Convert HTML to PDF for free in your browser. Paste code or upload files, preview live, download PDF. No signup.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I convert HTML to PDF for free?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Paste your HTML code into the editor on freehtmltopdf.app, preview the rendered output, choose your page size and orientation, then click Download PDF. Everything runs in your browser with no server uploads." }
+            },
+            {
+                "@type": "Question",
+                "name": "Is freehtmltopdf.app safe and private?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. All conversion happens locally in your browser using JavaScript. Your HTML code and generated PDFs never leave your device. No data is sent to any server." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I upload an HTML file instead of pasting code?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. Click the Upload button or drag and drop any .html file directly onto the editor panel. The file contents will load into the editor and the preview updates automatically." }
+            },
+            {
+                "@type": "Question",
+                "name": "What page sizes does freehtmltopdf.app support?",
+                "acceptedAnswer": { "@type": "Answer", "text": "freehtmltopdf.app supports A4, Letter, Legal, A3, A5, and Tabloid page sizes in both portrait and landscape orientation, with adjustable margins from none to 30mm." }
+            },
+            {
+                "@type": "Question",
+                "name": "Does the converter support CSS styling?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. Inline CSS, internal stylesheets, and most CSS properties are supported. The converter renders your HTML with full CSS styling before converting to PDF. Flexbox layouts work well; CSS Grid has limited support." }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to sign up or install anything?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. freehtmltopdf.app works instantly in any modern browser with no signup, no installation, and no account required. It also works offline after the first visit." }
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://freehtmltopdf.app/"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #faf9f6;
+            --surface: #f4f2ee;
+            --border: #e8e4dd;
+            --text-primary: #1a1917;
+            --text-secondary: #6b6760;
+            --text-muted: #9e9b96;
+            --accent: #C49A2A;
+            --accent-hover: #A8831F;
+            --accent-text: #ffffff;
+            --destructive: #c0392b;
+            --success: #27ae60;
+            --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+            --font-body: 'Lora', serif;
+            --font-ui: 'DM Sans', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+        html.dark {
+            --bg: #141412;
+            --surface: #1e1c1a;
+            --border: #2e2b27;
+            --text-primary: #f0ede8;
+            --text-secondary: #9e9b96;
+            --text-muted: #6b6760;
+            --accent: #D4A835;
+            --accent-hover: #C49A2A;
+            --accent-text: #ffffff;
+            --success: #2ecc71;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        html { font-size: 15px; line-height: 1.6; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text-primary);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+            flex-shrink: 0;
+            z-index: 100;
+        }
+        .header-brand {
+            font-family: var(--font-ui);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .theme-toggle {
+            font-family: var(--font-ui);
+            font-size: 13px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 6px 12px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.15s ease;
+        }
+        .theme-toggle:hover { background: var(--border); }
+
+        /* App Wrapper */
+        .app-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+        .toolbar-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .toolbar-label {
+            font-family: var(--font-ui);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .toolbar select,
+        .toolbar input[type="range"] {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--text-primary);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .toolbar select:focus,
+        .toolbar input:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(196,154,42,0.12);
+        }
+        .toolbar-spacer { flex: 1; }
+        .toolbar .orientation-toggle {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .orientation-toggle button {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 12px;
+            border: none;
+            cursor: pointer;
+            background: var(--bg);
+            color: var(--text-secondary);
+            transition: all 0.15s ease;
+        }
+        .orientation-toggle button.active {
+            background: var(--accent);
+            color: var(--accent-text);
+        }
+        .btn-primary {
+            font-family: var(--font-ui);
+            font-size: 13px;
+            font-weight: 500;
+            background: var(--accent);
+            color: var(--accent-text);
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+        }
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .btn-secondary {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            font-weight: 500;
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 4px 12px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+        }
+        .btn-secondary:hover { background: var(--surface); }
+        .btn-secondary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+        /* Panels */
+        .panels {
+            flex: 1;
+            display: flex;
+            min-height: 0;
+        }
+        .editor-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            border-right: 1px solid var(--border);
+        }
+        .editor-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            flex-shrink: 0;
+        }
+        .editor-header-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .editor-tab {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: default;
+        }
+        .editor-tab.active { color: var(--text-primary); background: var(--bg); }
+        .editor-actions {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .editor-textarea {
+            flex: 1;
+            width: 100%;
+            resize: none;
+            border: none;
+            outline: none;
+            padding: 16px;
+            font-family: var(--font-code);
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg);
+            tab-size: 2;
+        }
+        .editor-textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        /* Drag overlay */
+        .drag-overlay {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: rgba(196, 154, 42, 0.08);
+            border: 2px dashed var(--accent);
+            border-radius: 10px;
+            z-index: 50;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-ui);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--accent);
+            pointer-events: none;
+        }
+        .editor-panel.dragging .drag-overlay { display: flex; }
+
+        /* Resize handle */
+        .resize-handle {
+            width: 5px;
+            cursor: col-resize;
+            background: var(--border);
+            transition: background 0.15s ease;
+            flex-shrink: 0;
+        }
+        .resize-handle:hover,
+        .resize-handle.active { background: var(--accent); }
+
+        .preview-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            background: var(--surface);
+        }
+        .preview-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            flex-shrink: 0;
+        }
+        .preview-label {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+        .preview-container {
+            flex: 1;
+            overflow: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 24px;
+        }
+        .preview-iframe {
+            background: #ffffff;
+            border: none;
+            box-shadow: var(--shadow);
+            border-radius: 4px;
+            width: 100%;
+            max-width: 800px;
+            min-height: 400px;
+            height: 100%;
+        }
+        .preview-empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            font-family: var(--font-ui);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Status Bar */
+        .status-bar {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        .status-left, .status-right {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Badge */
+        .suite-badge {
+            position: fixed;
+            bottom: 40px;
+            right: 16px;
+            font-family: var(--font-ui);
+            font-size: 11px;
+            color: var(--text-muted);
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--text-primary);
+            color: var(--bg);
+            font-family: var(--font-ui);
+            font-size: 13px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: all 0.15s ease;
+            z-index: 1000;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* Loading overlay */
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.3);
+            z-index: 500;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading-overlay.show { display: flex; }
+        .loading-box {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 48px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-text {
+            font-family: var(--font-ui);
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Upgrade prompt */
+        #upgrade-prompt {
+            padding: 12px 16px;
+            border-top: 1px solid var(--border);
+            background: var(--surface);
+            flex-shrink: 0;
+        }
+        .upgrade-title {
+            font-family: var(--font-ui);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .upgrade-desc {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        .upgrade-link {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--accent);
+            text-decoration: none;
+            margin-top: 4px;
+            display: inline-block;
+        }
+        .upgrade-link:hover { text-decoration: underline; }
+
+        /* Mobile tabs */
+        .mobile-tabs {
+            display: none;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            flex-shrink: 0;
+        }
+        .mobile-tabs button {
+            flex: 1;
+            font-family: var(--font-ui);
+            font-size: 13px;
+            font-weight: 500;
+            padding: 10px 16px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.15s ease;
+        }
+        .mobile-tabs button.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* Scrollbars */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+        /* Template dropdown */
+        .template-dropdown {
+            position: relative;
+        }
+        .template-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 4px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            z-index: 200;
+            min-width: 180px;
+            overflow: hidden;
+        }
+        .template-menu.open { display: block; }
+        .template-menu button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .template-menu button:hover { background: var(--surface); }
+        .template-menu button .template-desc {
+            display: block;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .toolbar { gap: 8px; padding: 8px 12px; }
+            .toolbar-group.hide-mobile { display: none; }
+            .mobile-tabs { display: flex; }
+            .panels { flex-direction: column; }
+            .resize-handle { display: none; }
+            .editor-panel { border-right: none; }
+            .editor-panel.hidden { display: none; }
+            .preview-panel.hidden { display: none; }
+            .preview-container { padding: 12px; }
+            .suite-badge .badge-prefix { display: none; }
+        }
+
+        /* SEO content below fold */
+        .seo-content {
+            padding: 64px 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .seo-content h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        .seo-content h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        .seo-content p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .seo-content details {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 8px;
+        }
+        .seo-content summary {
+            font-family: var(--font-ui);
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .seo-content details p { margin-top: 12px; margin-bottom: 0; }
+        .seo-footer {
+            text-align: center;
+            padding: 32px 24px;
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+        }
+        .more-tools {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .more-tools-label {
+            font-family: var(--font-ui);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+        .more-tools-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        .more-tools-links a {
+            font-family: var(--font-ui);
+            font-size: 12px;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+        .more-tools-links a:hover { background: var(--surface); }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="/" class="header-brand">freehtmltopdf.app</a>
+        <div class="header-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+        </div>
+    </header>
+
+    <div class="app-wrapper">
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <span class="toolbar-label">Size</span>
+                <select id="pageSize">
+                    <option value="a4" selected>A4</option>
+                    <option value="letter">Letter</option>
+                    <option value="legal">Legal</option>
+                    <option value="a3">A3</option>
+                    <option value="a5">A5</option>
+                    <option value="tabloid">Tabloid</option>
+                </select>
+            </div>
+            <div class="toolbar-group">
+                <span class="toolbar-label">Orientation</span>
+                <div class="orientation-toggle">
+                    <button id="orientPortrait" class="active" title="Portrait">Portrait</button>
+                    <button id="orientLandscape" title="Landscape">Landscape</button>
+                </div>
+            </div>
+            <div class="toolbar-group hide-mobile">
+                <span class="toolbar-label">Margin</span>
+                <select id="marginSize">
+                    <option value="none">None</option>
+                    <option value="small">Small (10mm)</option>
+                    <option value="normal" selected>Normal (20mm)</option>
+                    <option value="large">Large (30mm)</option>
+                </select>
+            </div>
+            <div class="toolbar-group hide-mobile">
+                <span class="toolbar-label">Quality</span>
+                <select id="scaleSelect">
+                    <option value="1">1x (Fast)</option>
+                    <option value="2" selected>2x (Default)</option>
+                    <option value="3">3x (High)</option>
+                </select>
+            </div>
+            <div class="toolbar-spacer"></div>
+            <button class="btn-primary" id="downloadBtn">Download PDF</button>
+        </div>
+
+        <!-- Mobile tabs -->
+        <div class="mobile-tabs">
+            <button class="active" id="tabEditor">Editor</button>
+            <button id="tabPreview">Preview</button>
+        </div>
+
+        <!-- Split panels -->
+        <div class="panels">
+            <div class="editor-panel" id="editorPanel" style="position:relative;">
+                <div class="editor-header">
+                    <div class="editor-header-left">
+                        <span class="editor-tab active">HTML</span>
+                        <div class="template-dropdown">
+                            <button class="btn-secondary" id="templateBtn">Templates</button>
+                            <div class="template-menu" id="templateMenu">
+                                <button data-template="blank">Blank<span class="template-desc">Empty HTML document</span></button>
+                                <button data-template="resume">Resume<span class="template-desc">Professional CV template</span></button>
+                                <button data-template="invoice">Invoice<span class="template-desc">Business invoice template</span></button>
+                                <button data-template="report">Report<span class="template-desc">Simple report layout</span></button>
+                                <button data-template="letter">Letter<span class="template-desc">Formal letter template</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button class="btn-secondary" id="uploadBtn" title="Upload HTML file">Upload</button>
+                        <button class="btn-secondary" id="clearBtn" title="Clear editor">Clear</button>
+                    </div>
+                </div>
+                <textarea class="editor-textarea" id="htmlEditor" spellcheck="false" placeholder="Paste or type your HTML here...&#10;&#10;Or drag and drop an .html file onto this panel.&#10;&#10;Tip: Try a template from the Templates menu above."></textarea>
+                <div id="upgrade-prompt">
+                    <div class="upgrade-title">Custom CSS Injection</div>
+                    <div class="upgrade-desc">Add custom CSS to style the PDF output without modifying the HTML source.</div>
+                    <a href="https://freesuite.app" class="upgrade-link">Unlock with freesuite.app &middot; $2.88/mo</a>
+                </div>
+                <div class="drag-overlay">Drop HTML file here</div>
+                <input type="file" id="fileInput" accept=".html,.htm" style="display:none">
+            </div>
+
+            <div class="resize-handle" id="resizeHandle"></div>
+
+            <div class="preview-panel" id="previewPanel">
+                <div class="preview-header">
+                    <span class="preview-label">Preview</span>
+                    <label style="display:flex;align-items:center;gap:4px;font-family:var(--font-ui);font-size:11px;color:var(--text-muted);cursor:pointer;">
+                        <input type="checkbox" id="autoPreview" checked style="accent-color:var(--accent)"> Auto
+                    </label>
+                </div>
+                <div class="preview-container" id="previewContainer">
+                    <div class="preview-empty" id="previewEmpty">Enter HTML to see a live preview</div>
+                    <iframe class="preview-iframe" id="previewFrame" style="display:none" sandbox="allow-same-origin"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span class="status-left" id="statusLeft">Ready</span>
+            <span class="status-right">All processing happens in your browser — nothing uploaded</span>
+        </div>
+    </div>
+
+    <!-- SEO Content (below the fold) -->
+    <div class="seo-content">
+        <h1>Free HTML to PDF Converter — Turn Code into PDF Instantly</h1>
+
+        <p>freehtmltopdf.app is a free, browser-based HTML to PDF converter that turns your HTML code into downloadable PDF files instantly. Paste HTML, upload an .html file, or use a built-in template, then configure page size, orientation, and margins before downloading a high-quality PDF. All conversion runs locally in your browser using JavaScript — your code and documents never leave your device, making freehtmltopdf.app the most private way to convert HTML to PDF online.</p>
+
+        <h2>How does freehtmltopdf.app convert HTML to PDF?</h2>
+        <p>freehtmltopdf.app renders your HTML code in a live preview panel, then captures the rendered output and converts it into a multi-page PDF document. You can choose from six page sizes (A4, Letter, Legal, A3, A5, Tabloid), switch between portrait and landscape orientation, and set margins from none to 30mm. The quality slider lets you balance file size against rendering sharpness. Because the conversion happens entirely in your browser, there are no file size limits and no waiting for server processing.</p>
+
+        <h2>What HTML and CSS features are supported?</h2>
+        <p>freehtmltopdf.app supports the full range of HTML5 elements and most CSS properties including flexbox layouts, custom fonts loaded via inline @font-face rules, CSS variables, gradients, and box shadows. Inline CSS and internal stylesheets both work. CSS Grid has limited support in the PDF output. For best results with complex layouts, use flexbox positioning. Images referenced with base64 data URIs render in the PDF; external image URLs may not load due to browser security restrictions.</p>
+
+        <h2>Can I use freehtmltopdf.app for invoices and resumes?</h2>
+        <p>Yes. freehtmltopdf.app includes built-in templates for common document types including resumes, invoices, reports, and formal letters. Select a template from the dropdown, customize the HTML to match your needs, preview the result, and download the PDF. The templates use clean, print-optimized CSS that produces professional-looking documents on A4 and Letter page sizes.</p>
+
+        <h2>Is freehtmltopdf.app free to use?</h2>
+        <p>freehtmltopdf.app is completely free with no signup, no account, and no usage limits. Convert as many HTML files to PDF as you need. The tool works offline after the first visit thanks to service worker caching. Your HTML code stays on your device — freehtmltopdf.app never sends data to a server.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>How do I convert HTML to PDF for free?</summary>
+            <p>Paste your HTML code into the editor on freehtmltopdf.app, preview the rendered output, choose your page size and orientation, then click Download PDF. Everything runs in your browser with no server uploads.</p>
+        </details>
+        <details>
+            <summary>Is freehtmltopdf.app safe and private?</summary>
+            <p>Yes. All conversion happens locally in your browser using JavaScript. Your HTML code and generated PDFs never leave your device. No data is sent to any server.</p>
+        </details>
+        <details>
+            <summary>Can I upload an HTML file instead of pasting code?</summary>
+            <p>Yes. Click the Upload button or drag and drop any .html file directly onto the editor panel. The file contents will load into the editor and the preview updates automatically.</p>
+        </details>
+        <details>
+            <summary>What page sizes does freehtmltopdf.app support?</summary>
+            <p>freehtmltopdf.app supports A4, Letter, Legal, A3, A5, and Tabloid page sizes in both portrait and landscape orientation, with adjustable margins from none to 30mm.</p>
+        </details>
+        <details>
+            <summary>Does the converter support CSS styling?</summary>
+            <p>Yes. Inline CSS, internal stylesheets, and most CSS properties are supported. The converter renders your HTML with full CSS styling before converting to PDF. Flexbox layouts work well; CSS Grid has limited support.</p>
+        </details>
+        <details>
+            <summary>Do I need to sign up or install anything?</summary>
+            <p>No. freehtmltopdf.app works instantly in any modern browser with no signup, no installation, and no account required. It also works offline after the first visit.</p>
+        </details>
+    </div>
+
+    <footer class="seo-footer">
+        &copy; freehtmltopdf.app
+        <div class="more-tools">
+            <div class="more-tools-label">More free tools from Freesuite</div>
+            <div class="more-tools-links">
+                <a href="https://freejsonformatter.app">JSON Formatter</a>
+                <a href="https://freebase64.app">Base64 Encoder</a>
+                <a href="https://freemergepdf.app">PDF Merger</a>
+                <a href="https://freeimagetopdf.app">Image to PDF</a>
+                <a href="https://freepdftoimage.app">PDF to Image</a>
+                <a href="https://freeimagecompressor.app">Image Compressor</a>
+                <a href="https://freepage.app">Document Writer</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://freesuite.app" class="suite-badge" target="_blank" rel="noopener">
+        <span class="badge-prefix">by </span>freesuite.app
+    </a>
+
+    <div class="toast" id="toast"></div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-box">
+            <div class="loading-spinner"></div>
+            <div class="loading-text" id="loadingText">Generating PDF...</div>
+        </div>
+    </div>
+
+    <script src="/libs/html2pdf.bundle.min.js"></script>
+    <script>
+    (() => {
+        'use strict';
+
+        // DOM refs
+        const editor = document.getElementById('htmlEditor');
+        const previewFrame = document.getElementById('previewFrame');
+        const previewEmpty = document.getElementById('previewEmpty');
+        const previewContainer = document.getElementById('previewContainer');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const pageSize = document.getElementById('pageSize');
+        const marginSize = document.getElementById('marginSize');
+        const scaleSelect = document.getElementById('scaleSelect');
+        const orientPortrait = document.getElementById('orientPortrait');
+        const orientLandscape = document.getElementById('orientLandscape');
+        const autoPreview = document.getElementById('autoPreview');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const fileInput = document.getElementById('fileInput');
+        const templateBtn = document.getElementById('templateBtn');
+        const templateMenu = document.getElementById('templateMenu');
+        const editorPanel = document.getElementById('editorPanel');
+        const previewPanel = document.getElementById('previewPanel');
+        const resizeHandle = document.getElementById('resizeHandle');
+        const statusLeft = document.getElementById('statusLeft');
+        const toast = document.getElementById('toast');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const loadingText = document.getElementById('loadingText');
+        const tabEditor = document.getElementById('tabEditor');
+        const tabPreview = document.getElementById('tabPreview');
+        const themeToggle = document.getElementById('themeToggle');
+
+        // State
+        let orientation = 'portrait';
+        let previewTimer = null;
+
+        // Theme
+        const getTheme = () => localStorage.getItem('suite_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const applyTheme = (t) => {
+            document.documentElement.classList.toggle('dark', t === 'dark');
+            themeToggle.textContent = t === 'dark' ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+            localStorage.setItem('suite_theme', t);
+        };
+        applyTheme(getTheme());
+        themeToggle.addEventListener('click', () => applyTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'));
+
+        // Restore settings
+        const restore = (key, fallback) => localStorage.getItem(key) || fallback;
+        pageSize.value = restore('freehtmltopdf_pagesize', 'a4');
+        marginSize.value = restore('freehtmltopdf_margin', 'normal');
+        scaleSelect.value = restore('freehtmltopdf_scale', '2');
+        const savedOrient = restore('freehtmltopdf_orientation', 'portrait');
+        if (savedOrient === 'landscape') {
+            orientation = 'landscape';
+            orientPortrait.classList.remove('active');
+            orientLandscape.classList.add('active');
+        }
+
+        // Save settings on change
+        pageSize.addEventListener('change', () => localStorage.setItem('freehtmltopdf_pagesize', pageSize.value));
+        marginSize.addEventListener('change', () => localStorage.setItem('freehtmltopdf_margin', marginSize.value));
+        scaleSelect.addEventListener('change', () => localStorage.setItem('freehtmltopdf_scale', scaleSelect.value));
+
+        // Orientation toggle
+        orientPortrait.addEventListener('click', () => {
+            orientation = 'portrait';
+            orientPortrait.classList.add('active');
+            orientLandscape.classList.remove('active');
+            localStorage.setItem('freehtmltopdf_orientation', 'portrait');
+        });
+        orientLandscape.addEventListener('click', () => {
+            orientation = 'landscape';
+            orientLandscape.classList.add('active');
+            orientPortrait.classList.remove('active');
+            localStorage.setItem('freehtmltopdf_orientation', 'landscape');
+        });
+
+        // Toast
+        let toastTimer = null;
+        const showToast = (msg) => {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
+        };
+
+        // Preview
+        const updatePreview = () => {
+            const html = editor.value.trim();
+            if (!html) {
+                previewFrame.style.display = 'none';
+                previewEmpty.style.display = 'flex';
+                statusLeft.textContent = 'Ready';
+                return;
+            }
+            previewEmpty.style.display = 'none';
+            previewFrame.style.display = 'block';
+            previewFrame.srcdoc = html;
+            const bytes = new Blob([html]).size;
+            const lines = editor.value.split('\n').length;
+            statusLeft.textContent = `${lines} lines \u00B7 ${formatBytes(bytes)}`;
+        };
+
+        const formatBytes = (b) => {
+            if (b < 1024) return b + ' B';
+            if (b < 1048576) return (b / 1024).toFixed(1) + ' KB';
+            return (b / 1048576).toFixed(1) + ' MB';
+        };
+
+        const schedulePreview = () => {
+            if (!autoPreview.checked) return;
+            clearTimeout(previewTimer);
+            previewTimer = setTimeout(updatePreview, 300);
+        };
+
+        editor.addEventListener('input', schedulePreview);
+        autoPreview.addEventListener('change', () => {
+            if (autoPreview.checked) updatePreview();
+        });
+
+        // Upload
+        uploadBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', () => {
+            const file = fileInput.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                editor.value = reader.result;
+                updatePreview();
+                showToast('File loaded: ' + file.name);
+            };
+            reader.readAsText(file);
+            fileInput.value = '';
+        });
+
+        // Drag and drop
+        let dragCounter = 0;
+        editorPanel.addEventListener('dragenter', (e) => {
+            e.preventDefault();
+            dragCounter++;
+            editorPanel.classList.add('dragging');
+        });
+        editorPanel.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            dragCounter--;
+            if (dragCounter <= 0) {
+                dragCounter = 0;
+                editorPanel.classList.remove('dragging');
+            }
+        });
+        editorPanel.addEventListener('dragover', (e) => e.preventDefault());
+        editorPanel.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dragCounter = 0;
+            editorPanel.classList.remove('dragging');
+            const file = e.dataTransfer.files[0];
+            if (file && (file.name.endsWith('.html') || file.name.endsWith('.htm'))) {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    editor.value = reader.result;
+                    updatePreview();
+                    showToast('File loaded: ' + file.name);
+                };
+                reader.readAsText(file);
+            } else {
+                showToast('Please drop an .html file');
+            }
+        });
+
+        // Clear
+        clearBtn.addEventListener('click', () => {
+            editor.value = '';
+            updatePreview();
+        });
+
+        // Templates
+        templateBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            templateMenu.classList.toggle('open');
+        });
+        document.addEventListener('click', () => templateMenu.classList.remove('open'));
+
+        const templates = {
+            blank: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; color: #333; }
+        h1 { color: #1a1a1a; margin-bottom: 16px; }
+        p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Start writing your content here.</p>
+</body>
+</html>`,
+
+            resume: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Jane Smith</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 40px; color: #333; }
+        h1 { font-size: 28px; margin-bottom: 4px; color: #1a1a1a; }
+        .subtitle { color: #666; font-size: 16px; margin-bottom: 8px; }
+        .contact { color: #888; font-size: 13px; margin-bottom: 24px; }
+        h2 { font-size: 16px; text-transform: uppercase; letter-spacing: 1px; color: #C49A2A; border-bottom: 2px solid #C49A2A; padding-bottom: 4px; margin-top: 24px; margin-bottom: 12px; }
+        .job { margin-bottom: 16px; }
+        .job-title { font-weight: 600; font-size: 15px; }
+        .job-company { color: #666; font-size: 14px; }
+        .job-date { color: #999; font-size: 12px; }
+        ul { padding-left: 20px; margin-top: 8px; }
+        li { font-size: 14px; line-height: 1.6; color: #555; margin-bottom: 4px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill { background: #f0f0f0; padding: 4px 10px; border-radius: 4px; font-size: 12px; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Jane Smith</h1>
+    <div class="subtitle">Senior Software Engineer</div>
+    <div class="contact">jane.smith@email.com &bull; (555) 123-4567 &bull; San Francisco, CA</div>
+
+    <h2>Experience</h2>
+    <div class="job">
+        <div class="job-title">Senior Software Engineer</div>
+        <div class="job-company">Tech Corp &bull; <span class="job-date">2021 \u2013 Present</span></div>
+        <ul>
+            <li>Led migration of monolithic application to microservices, reducing deployment time by 60%</li>
+            <li>Mentored team of 5 junior developers through code reviews and pair programming</li>
+            <li>Designed and implemented real-time data pipeline processing 2M events/day</li>
+        </ul>
+    </div>
+    <div class="job">
+        <div class="job-title">Software Engineer</div>
+        <div class="job-company">StartupXYZ &bull; <span class="job-date">2018 \u2013 2021</span></div>
+        <ul>
+            <li>Built customer-facing dashboard used by 50,000+ monthly active users</li>
+            <li>Reduced API response times by 40% through database query optimization</li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="job">
+        <div class="job-title">B.S. Computer Science</div>
+        <div class="job-company">University of California, Berkeley &bull; <span class="job-date">2014 \u2013 2018</span></div>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills">
+        <span class="skill">JavaScript</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Docker</span>
+        <span class="skill">AWS</span>
+        <span class="skill">GraphQL</span>
+    </div>
+</body>
+</html>`,
+
+            invoice: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice #1001</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 40px; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .company { font-size: 24px; font-weight: 700; color: #1a1a1a; }
+        .company-details { font-size: 13px; color: #888; margin-top: 4px; }
+        .invoice-info { text-align: right; }
+        .invoice-number { font-size: 20px; font-weight: 600; color: #C49A2A; }
+        .invoice-date { font-size: 13px; color: #888; margin-top: 4px; }
+        .addresses { display: flex; justify-content: space-between; margin-bottom: 32px; }
+        .address-block h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 8px; }
+        .address-block p { font-size: 14px; line-height: 1.6; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+        th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #999; padding: 8px 12px; border-bottom: 2px solid #eee; }
+        td { padding: 12px; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        td:last-child, th:last-child { text-align: right; }
+        .totals { display: flex; justify-content: flex-end; }
+        .totals-table { width: 250px; }
+        .totals-table tr td { padding: 6px 12px; font-size: 14px; }
+        .totals-table tr:last-child td { font-weight: 700; font-size: 18px; border-top: 2px solid #333; color: #1a1a1a; padding-top: 12px; }
+        .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #999; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="company">Your Company</div>
+            <div class="company-details">123 Business St, Suite 100<br>New York, NY 10001</div>
+        </div>
+        <div class="invoice-info">
+            <div class="invoice-number">Invoice #1001</div>
+            <div class="invoice-date">Date: April 16, 2026<br>Due: May 16, 2026</div>
+        </div>
+    </div>
+
+    <div class="addresses">
+        <div class="address-block">
+            <h3>Bill To</h3>
+            <p><strong>Client Company</strong><br>456 Client Ave<br>Los Angeles, CA 90001<br>billing@client.com</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Web Development Services</td><td>40 hrs</td><td>$150.00</td><td>$6,000.00</td></tr>
+            <tr><td>UI/UX Design</td><td>20 hrs</td><td>$125.00</td><td>$2,500.00</td></tr>
+            <tr><td>Project Management</td><td>10 hrs</td><td>$100.00</td><td>$1,000.00</td></tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <table class="totals-table">
+            <tr><td>Subtotal</td><td>$9,500.00</td></tr>
+            <tr><td>Tax (8%)</td><td>$760.00</td></tr>
+            <tr><td>Total</td><td>$10,260.00</td></tr>
+        </table>
+    </div>
+
+    <div class="footer">Thank you for your business. Payment due within 30 days.</div>
+</body>
+</html>`,
+
+            report: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quarterly Report - Q1 2026</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 40px; color: #333; line-height: 1.7; }
+        h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 8px; }
+        .report-meta { color: #888; font-size: 13px; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 2px solid #C49A2A; }
+        h2 { font-size: 20px; color: #1a1a1a; margin-top: 32px; margin-bottom: 12px; }
+        p { font-size: 15px; margin-bottom: 16px; }
+        .highlight { background: #FFF8E7; border-left: 3px solid #C49A2A; padding: 16px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+        .highlight strong { color: #C49A2A; }
+        .stats { display: flex; gap: 16px; margin: 24px 0; }
+        .stat { flex: 1; background: #f8f8f8; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 28px; font-weight: 700; color: #C49A2A; }
+        .stat-label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+        th, td { padding: 10px 12px; font-size: 14px; text-align: left; border-bottom: 1px solid #eee; }
+        th { font-weight: 600; color: #666; background: #f8f8f8; }
+    </style>
+</head>
+<body>
+    <h1>Quarterly Report</h1>
+    <div class="report-meta">Q1 2026 &bull; Prepared by Operations Team &bull; April 2026</div>
+
+    <h2>Executive Summary</h2>
+    <p>Q1 2026 saw strong growth across all key metrics. Revenue increased 23% year-over-year, driven by expansion in enterprise accounts and improved retention rates. The team successfully launched two major product features that contributed to a 15% increase in user engagement.</p>
+
+    <div class="stats">
+        <div class="stat"><div class="stat-number">$2.4M</div><div class="stat-label">Revenue</div></div>
+        <div class="stat"><div class="stat-number">12,500</div><div class="stat-label">Active Users</div></div>
+        <div class="stat"><div class="stat-number">94%</div><div class="stat-label">Retention</div></div>
+    </div>
+
+    <h2>Key Achievements</h2>
+    <div class="highlight"><strong>Product Launch:</strong> Successfully shipped the new analytics dashboard, adopted by 3,200 users in the first month.</div>
+    <p>The engineering team completed migration to the new infrastructure, resulting in 40% faster page load times and 99.97% uptime throughout the quarter.</p>
+
+    <h2>Financial Overview</h2>
+    <table>
+        <thead><tr><th>Metric</th><th>Q1 2026</th><th>Q4 2025</th><th>Change</th></tr></thead>
+        <tbody>
+            <tr><td>Revenue</td><td>$2,400,000</td><td>$2,100,000</td><td>+14%</td></tr>
+            <tr><td>Operating Costs</td><td>$1,680,000</td><td>$1,550,000</td><td>+8%</td></tr>
+            <tr><td>Net Profit</td><td>$720,000</td><td>$550,000</td><td>+31%</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Next Quarter Outlook</h2>
+    <p>Q2 priorities include expanding the sales team, launching the mobile application, and entering two new geographic markets. We project 18-22% revenue growth based on the current pipeline.</p>
+</body>
+</html>`,
+
+            letter: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formal Letter</title>
+    <style>
+        body { font-family: 'Georgia', serif; max-width: 650px; margin: 0 auto; padding: 60px 40px; color: #333; line-height: 1.8; font-size: 15px; }
+        .sender { margin-bottom: 32px; }
+        .sender p { margin: 0; line-height: 1.5; font-size: 14px; color: #555; }
+        .date { margin-bottom: 32px; color: #555; }
+        .recipient { margin-bottom: 32px; }
+        .recipient p { margin: 0; line-height: 1.5; font-size: 14px; }
+        .subject { font-weight: 700; margin-bottom: 24px; font-size: 15px; }
+        .salutation { margin-bottom: 16px; }
+        .body p { margin-bottom: 16px; text-align: justify; }
+        .closing { margin-top: 32px; }
+        .signature { margin-top: 48px; }
+        .signature-name { font-weight: 700; }
+        .signature-title { color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="sender">
+        <p><strong>Jane Smith</strong></p>
+        <p>123 Main Street</p>
+        <p>New York, NY 10001</p>
+        <p>jane.smith@email.com</p>
+    </div>
+
+    <div class="date">April 16, 2026</div>
+
+    <div class="recipient">
+        <p><strong>Mr. John Davis</strong></p>
+        <p>Director of Operations</p>
+        <p>ABC Corporation</p>
+        <p>456 Corporate Blvd</p>
+        <p>Chicago, IL 60601</p>
+    </div>
+
+    <div class="subject">Re: Partnership Proposal</div>
+
+    <div class="salutation">Dear Mr. Davis,</div>
+
+    <div class="body">
+        <p>I am writing to express our keen interest in establishing a strategic partnership between our organizations. Following our productive meeting last week, I believe there is significant potential for collaboration that would benefit both parties.</p>
+
+        <p>Our team has prepared a detailed proposal outlining the scope of the partnership, including shared resources, joint marketing initiatives, and technology integration opportunities. The proposal addresses the key points we discussed and includes projected timelines and resource requirements.</p>
+
+        <p>I would welcome the opportunity to present this proposal to your leadership team at your earliest convenience. Please do not hesitate to contact me to arrange a meeting.</p>
+    </div>
+
+    <div class="closing">Sincerely,</div>
+    <div class="signature">
+        <div class="signature-name">Jane Smith</div>
+        <div class="signature-title">Director of Business Development</div>
+    </div>
+</body>
+</html>`
+        };
+
+        templateMenu.querySelectorAll('button[data-template]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const key = btn.dataset.template;
+                if (templates[key]) {
+                    editor.value = templates[key];
+                    updatePreview();
+                    showToast('Template loaded: ' + btn.textContent.split('\n')[0].trim());
+                }
+                templateMenu.classList.remove('open');
+            });
+        });
+
+        // Resize handle
+        let isResizing = false;
+        resizeHandle.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            isResizing = true;
+            resizeHandle.classList.add('active');
+            document.body.style.cursor = 'col-resize';
+            document.body.style.userSelect = 'none';
+        });
+        document.addEventListener('mousemove', (e) => {
+            if (!isResizing) return;
+            const panels = document.querySelector('.panels');
+            const rect = panels.getBoundingClientRect();
+            const pct = ((e.clientX - rect.left) / rect.width) * 100;
+            const clamped = Math.max(20, Math.min(80, pct));
+            editorPanel.style.flex = 'none';
+            editorPanel.style.width = clamped + '%';
+            previewPanel.style.flex = '1';
+        });
+        document.addEventListener('mouseup', () => {
+            if (!isResizing) return;
+            isResizing = false;
+            resizeHandle.classList.remove('active');
+            document.body.style.cursor = '';
+            document.body.style.userSelect = '';
+        });
+
+        // Mobile tabs
+        tabEditor.addEventListener('click', () => {
+            tabEditor.classList.add('active');
+            tabPreview.classList.remove('active');
+            editorPanel.classList.remove('hidden');
+            previewPanel.classList.add('hidden');
+        });
+        tabPreview.addEventListener('click', () => {
+            tabPreview.classList.add('active');
+            tabEditor.classList.remove('active');
+            previewPanel.classList.remove('hidden');
+            editorPanel.classList.add('hidden');
+            updatePreview();
+        });
+
+        // PDF generation
+        const marginMap = { none: 0, small: 10, normal: 20, large: 30 };
+
+        const generatePDF = async () => {
+            const html = editor.value.trim();
+            if (!html) {
+                showToast('Enter some HTML first');
+                return;
+            }
+
+            downloadBtn.disabled = true;
+            loadingOverlay.classList.add('show');
+            loadingText.textContent = 'Generating PDF...';
+
+            try {
+                // Create a temporary container for html2pdf
+                const container = document.createElement('div');
+                container.innerHTML = html;
+                container.style.cssText = 'position:absolute;left:-9999px;top:0;';
+                document.body.appendChild(container);
+
+                // Extract styles from the HTML and apply them
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const styles = doc.querySelectorAll('style');
+                styles.forEach(style => {
+                    const s = document.createElement('style');
+                    s.textContent = style.textContent;
+                    container.appendChild(s);
+                });
+
+                // Copy body content only for rendering
+                container.innerHTML = '';
+                const bodyContent = doc.body ? doc.body.innerHTML : html;
+                container.innerHTML = bodyContent;
+                // Re-append styles
+                styles.forEach(style => {
+                    const s = document.createElement('style');
+                    s.textContent = style.textContent;
+                    container.prepend(s);
+                });
+                // Apply body styles if present
+                if (doc.body && doc.body.getAttribute('style')) {
+                    container.style.cssText += doc.body.getAttribute('style');
+                }
+
+                const margin = marginMap[marginSize.value] || 20;
+                const scale = parseInt(scaleSelect.value) || 2;
+
+                // Extract title for filename
+                const titleEl = doc.querySelector('title');
+                const filename = titleEl && titleEl.textContent.trim()
+                    ? titleEl.textContent.trim().replace(/[^a-zA-Z0-9\s-]/g, '').replace(/\s+/g, '-').toLowerCase()
+                    : 'document';
+
+                const opt = {
+                    margin: margin,
+                    filename: filename + '.pdf',
+                    image: { type: 'jpeg', quality: 0.95 },
+                    html2canvas: {
+                        scale: scale,
+                        useCORS: true,
+                        logging: false,
+                        letterRendering: true
+                    },
+                    jsPDF: {
+                        unit: 'mm',
+                        format: pageSize.value,
+                        orientation: orientation
+                    },
+                    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                };
+
+                await html2pdf().set(opt).from(container).save();
+                document.body.removeChild(container);
+
+                showToast('PDF downloaded: ' + filename + '.pdf');
+                statusLeft.textContent = 'PDF generated successfully';
+            } catch (err) {
+                console.error('PDF generation error:', err);
+                showToast('Error generating PDF. Check your HTML.');
+                statusLeft.textContent = 'Error generating PDF';
+            } finally {
+                downloadBtn.disabled = false;
+                loadingOverlay.classList.remove('show');
+            }
+        };
+
+        downloadBtn.addEventListener('click', generatePDF);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                generatePDF();
+            }
+        });
+
+        // Tab key in editor
+        editor.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const start = editor.selectionStart;
+                const end = editor.selectionEnd;
+                editor.value = editor.value.substring(0, start) + '  ' + editor.value.substring(end);
+                editor.selectionStart = editor.selectionEnd = start + 2;
+                schedulePreview();
+            }
+        });
+
+        // Init
+        updatePreview();
+    })();
+    </script>
+</body>
+</html>

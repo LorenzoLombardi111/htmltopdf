@@ -1,0 +1,44 @@
+# freehtmltopdf.app
+
+> Free, browser-based HTML to PDF converter. Paste code or upload .html files, preview live, configure page settings, download PDF. No signup, no server uploads. Part of Freesuite.
+
+## Key Facts
+- 100% client-side — all conversion runs in your browser via html2pdf.js
+- Supports A4, Letter, Legal, A3, A5, Tabloid page sizes
+- Portrait and landscape orientation
+- Adjustable margins: none, small (10mm), normal (20mm), large (30mm)
+- Quality settings: 1x (fast), 2x (default), 3x (high)
+- Built-in templates: blank, resume, invoice, report, letter
+- Drag-and-drop .html file upload
+- Live preview with auto-refresh
+- Works offline after first visit (PWA with service worker)
+- Dark mode support
+
+## Features
+- HTML code editor with monospace font and tab support
+- Live preview in sandboxed iframe
+- PDF generation with configurable page size, orientation, margins, quality
+- File upload and drag-and-drop
+- 5 starter templates (blank, resume, invoice, report, letter)
+- Resizable split panels (editor + preview)
+- Mobile-responsive with tabbed interface
+- Keyboard shortcut: Ctrl+Enter to generate PDF
+- Auto-filename from HTML <title> tag
+
+## CSS Support
+- Inline CSS and internal stylesheets
+- Flexbox layouts (recommended)
+- CSS variables, gradients, box shadows
+- Custom fonts via @font-face with base64 data
+- Limited CSS Grid support
+- Base64 data URI images
+
+## Pages
+- [Home](https://freehtmltopdf.app/) — Main HTML to PDF converter tool
+- [vs wkhtmltopdf](https://freehtmltopdf.app/vs-wkhtmltopdf) — Comparison with wkhtmltopdf command-line tool
+- [vs PDFShift](https://freehtmltopdf.app/vs-pdfshift) — Comparison with PDFShift paid API
+- [HTML Invoice to PDF](https://freehtmltopdf.app/html-invoice-to-pdf) — Convert HTML invoices to PDF
+- [HTML Resume to PDF](https://freehtmltopdf.app/html-resume-to-pdf) — Convert HTML resumes to PDF
+- [How to Convert HTML to PDF](https://freehtmltopdf.app/convert-html-to-pdf) — Step-by-step guide
+
+For the complete text content of all pages, see [llms-full.txt](https://freehtmltopdf.app/llms-full.txt).

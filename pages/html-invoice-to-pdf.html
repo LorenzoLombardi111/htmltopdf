@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert HTML Invoice to PDF Free — freehtmltopdf.app</title>
+    <meta name="description" content="Convert your HTML invoice to a professional PDF for free. Paste invoice HTML, preview, and download. No signup required.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://freehtmltopdf.app/html-invoice-to-pdf">
+    <meta name="theme-color" content="#faf9f6">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta property="og:title" content="Convert HTML Invoice to PDF Free — freehtmltopdf.app">
+    <meta property="og:description" content="Convert your HTML invoice to a professional PDF for free. No signup required.">
+    <meta property="og:image" content="https://freehtmltopdf.app/og-image.svg">
+    <meta property="og:url" content="https://freehtmltopdf.app/html-invoice-to-pdf">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Convert HTML Invoice to PDF Free — freehtmltopdf.app">
+    <meta name="twitter:description" content="Convert your HTML invoice to a professional PDF for free. No signup required.">
+    <meta name="twitter:image" content="https://freehtmltopdf.app/og-image.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Convert HTML Invoice to PDF Free","description":"Convert your HTML invoice to a professional PDF for free. Paste invoice HTML, preview, and download.","url":"https://freehtmltopdf.app/html-invoice-to-pdf","publisher":{"@type":"Organization","name":"freehtmltopdf.app","url":"https://freehtmltopdf.app/"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert an HTML invoice to PDF?","acceptedAnswer":{"@type":"Answer","text":"Open freehtmltopdf.app, paste your HTML invoice code or click Templates and select Invoice, preview the rendered invoice, choose A4 or Letter page size, then click Download PDF."}},{"@type":"Question","name":"Does the invoice template include line items and totals?","acceptedAnswer":{"@type":"Answer","text":"Yes. The built-in invoice template includes company header, billing address, itemized line items with quantity and rate, subtotal, tax calculation, and total amount."}},{"@type":"Question","name":"Can I customize the invoice styling?","acceptedAnswer":{"@type":"Answer","text":"Yes. Edit the CSS in the HTML to change fonts, colors, layout, and branding. The live preview shows changes in real time so you can fine-tune the design before generating the PDF."}},{"@type":"Question","name":"Is the invoice data stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. freehtmltopdf.app processes everything in your browser. Your invoice data, including client details and amounts, never leaves your device."}},{"@type":"Question","name":"What page size is best for invoices?","acceptedAnswer":{"@type":"Answer","text":"A4 is the standard for most countries. Letter (8.5 x 11 inches) is standard in the US and Canada. Both work well with the built-in invoice template."}},{"@type":"Question","name":"Can I add my company logo to the invoice PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes. Include your logo as a base64-encoded image in the HTML using an img tag with a data URI. External image URLs may not load due to browser security restrictions."}}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://freehtmltopdf.app/"},{"@type":"ListItem","position":2,"name":"HTML Invoice to PDF","item":"https://freehtmltopdf.app/html-invoice-to-pdf"}]}
+    </script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg: #faf9f6; --surface: #f4f2ee; --border: #e8e4dd; --text-primary: #1a1917; --text-secondary: #6b6760; --text-muted: #9e9b96; --accent: #C49A2A; --accent-hover: #A8831F; --accent-text: #ffffff; --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04); --font-body: 'Lora', serif; --font-ui: 'DM Sans', sans-serif; }
+        html.dark { --bg: #141412; --surface: #1e1c1a; --border: #2e2b27; --text-primary: #f0ede8; --text-secondary: #9e9b96; --text-muted: #6b6760; --accent: #D4A835; --accent-hover: #C49A2A; --accent-text: #ffffff; --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); }
+        html { font-size: 15px; line-height: 1.6; } body { font-family: var(--font-body); background: var(--bg); color: var(--text-primary); }
+        .header { height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+        .header-brand { font-family: var(--font-ui); font-size: 15px; font-weight: 600; color: var(--accent); text-decoration: none; }
+        .theme-toggle { font-family: var(--font-ui); font-size: 13px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 6px 12px; cursor: pointer; color: var(--text-secondary); transition: all 0.15s ease; }
+        .theme-toggle:hover { background: var(--border); }
+        .breadcrumb { font-family: var(--font-ui); font-size: 12px; color: var(--text-muted); padding: 12px 24px; max-width: 800px; margin: 0 auto; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; } .breadcrumb a:hover { text-decoration: underline; }
+        .landing-content { max-width: 800px; margin: 0 auto; padding: 32px 24px 64px; }
+        .landing-content h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; line-height: 1.3; }
+        .landing-content h2 { font-size: 22px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+        .landing-content p { color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7; }
+        .cta-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-family: var(--font-ui); font-size: 18px; font-weight: 600; margin-bottom: 12px; }
+        .cta-box p { color: var(--text-muted); margin-bottom: 16px; }
+        .cta-btn { font-family: var(--font-ui); font-size: 15px; font-weight: 600; background: var(--accent); color: var(--accent-text); border: none; border-radius: 8px; padding: 12px 24px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.15s ease; }
+        .cta-btn:hover { background: var(--accent-hover); }
+        details { border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 8px; }
+        summary { font-family: var(--font-ui); font-weight: 500; cursor: pointer; }
+        details p { margin-top: 12px; margin-bottom: 0; }
+        .landing-footer { text-align: center; padding: 32px 24px; font-family: var(--font-ui); font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border); }
+        .more-tools { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; }
+        .more-tools-label { font-family: var(--font-ui); font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+        .more-tools-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .more-tools-links a { font-family: var(--font-ui); font-size: 12px; color: var(--accent); text-decoration: none; padding: 4px 10px; border: 1px solid var(--border); border-radius: 6px; transition: all 0.15s ease; }
+        .more-tools-links a:hover { background: var(--surface); }
+        .suite-badge { position: fixed; bottom: 16px; right: 16px; font-family: var(--font-ui); font-size: 11px; color: var(--text-muted); text-decoration: none; }
+        @media (max-width: 768px) { .landing-content h1 { font-size: 24px; } .landing-content { padding: 24px 16px 48px; } .suite-badge .badge-prefix { display: none; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header-brand">freehtmltopdf.app</a>
+        <button class="theme-toggle" id="themeToggle"></button>
+    </header>
+    <nav class="breadcrumb"><a href="/">Home</a> › Convert HTML Invoice to PDF</nav>
+    <article class="landing-content">
+        <h1>Convert HTML Invoice to PDF — Free Online Converter</h1>
+        <p>freehtmltopdf.app lets you convert HTML invoices to professional PDF files instantly in your browser. Paste your invoice HTML, use the built-in invoice template, or upload an .html invoice file. The live preview shows exactly how the PDF will look before you download it. freehtmltopdf.app processes everything locally — your invoice data, client details, and payment amounts never leave your device.</p>
+
+        <h2>How to convert an HTML invoice to PDF with freehtmltopdf.app</h2>
+        <p>Open freehtmltopdf.app and click Templates, then select Invoice. The editor loads a professional invoice template with company header, billing address, line items, and totals. Edit the HTML to add your company name, client details, and line items. The preview panel updates in real time. Choose A4 or Letter page size, set Normal margins, and click Download PDF. The entire process takes under a minute and produces a clean, print-ready invoice.</p>
+
+        <h2>Why use HTML for invoices?</h2>
+        <p>HTML invoices give you complete control over layout, typography, and branding. Unlike Word documents or online invoice generators, HTML lets you use CSS to create pixel-perfect designs with your exact brand colors, fonts, and logo. With freehtmltopdf.app, you write the HTML once and generate consistent PDFs every time. The template approach also makes it easy to automate invoice generation with a simple find-and-replace workflow.</p>
+
+        <h2>Can I add my company branding?</h2>
+        <p>Yes. Customize every aspect of the invoice through CSS — change fonts, colors, spacing, and layout. Add your company logo as a base64-encoded image in an img tag. The built-in invoice template uses clean, minimal CSS that you can modify to match your brand identity. freehtmltopdf.app renders CSS flexbox layouts accurately, so complex invoice designs with multi-column sections work well.</p>
+
+        <div class="cta-box">
+            <h3>Create Your Invoice PDF — Free</h3>
+            <p>Built-in invoice template. Live preview. No signup required.</p>
+            <a href="/" class="cta-btn">Open HTML to PDF →</a>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <details><summary>How do I convert an HTML invoice to PDF?</summary><p>Open freehtmltopdf.app, paste your HTML invoice code or click Templates and select Invoice, preview the rendered invoice, choose A4 or Letter page size, then click Download PDF.</p></details>
+        <details><summary>Does the invoice template include line items and totals?</summary><p>Yes. The built-in invoice template includes company header, billing address, itemized line items with quantity and rate, subtotal, tax calculation, and total amount.</p></details>
+        <details><summary>Can I customize the invoice styling?</summary><p>Yes. Edit the CSS in the HTML to change fonts, colors, layout, and branding. The live preview shows changes in real time so you can fine-tune the design before generating the PDF.</p></details>
+        <details><summary>Is the invoice data stored anywhere?</summary><p>No. freehtmltopdf.app processes everything in your browser. Your invoice data, including client details and amounts, never leaves your device.</p></details>
+        <details><summary>What page size is best for invoices?</summary><p>A4 is the standard for most countries. Letter (8.5 x 11 inches) is standard in the US and Canada. Both work well with the built-in invoice template.</p></details>
+        <details><summary>Can I add my company logo to the invoice PDF?</summary><p>Yes. Include your logo as a base64-encoded image in the HTML using an img tag with a data URI. External image URLs may not load due to browser security restrictions.</p></details>
+    </article>
+    <footer class="landing-footer">
+        &copy; freehtmltopdf.app
+        <div class="more-tools">
+            <div class="more-tools-label">More free tools from Freesuite</div>
+            <div class="more-tools-links">
+                <a href="https://freejsonformatter.app">JSON Formatter</a>
+                <a href="https://freebase64.app">Base64 Encoder</a>
+                <a href="https://freemergepdf.app">PDF Merger</a>
+                <a href="https://freeimagetopdf.app">Image to PDF</a>
+                <a href="https://freepdftoimage.app">PDF to Image</a>
+                <a href="https://freepage.app">Document Writer</a>
+            </div>
+        </div>
+    </footer>
+    <a href="https://freesuite.app" class="suite-badge" target="_blank" rel="noopener"><span class="badge-prefix">by </span>freesuite.app</a>
+    <script>
+    (() => { const t=document.getElementById('themeToggle'); const g=()=>localStorage.getItem('suite_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'); const a=(v)=>{document.documentElement.classList.toggle('dark',v==='dark');t.textContent=v==='dark'?'\u{1F319}':'\u{2600}\u{FE0F}';localStorage.setItem('suite_theme',v);}; a(g()); t.addEventListener('click',()=>a(document.documentElement.classList.contains('dark')?'light':'dark')); })();
+    </script>
+</body>
+</html>
