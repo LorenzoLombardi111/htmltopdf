@@ -143,10 +143,6 @@
             font-family: var(--font-body);
             background: var(--bg);
             color: var(--text-primary);
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
         }
 
         /* Header */
@@ -188,10 +184,10 @@
 
         /* App Wrapper */
         .app-wrapper {
-            flex: 1;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            min-height: 0;
+            overflow: hidden;
         }
 
         /* Toolbar */
@@ -711,14 +707,13 @@
 </head>
 <body>
 
-    <header class="header">
-        <a href="/" class="header-brand">freehtmltopdf.app</a>
-        <div class="header-right">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
-        </div>
-    </header>
-
     <div class="app-wrapper">
+        <header class="header">
+            <a href="/" class="header-brand">freehtmltopdf.app</a>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+            </div>
+        </header>
         <!-- Toolbar -->
         <div class="toolbar">
             <div class="toolbar-group">
